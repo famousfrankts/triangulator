@@ -12,7 +12,6 @@ const INITIAL_STATE = {
 const triangle = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case types.SET_TRIANGLE:
-      // const { a, b, c } = action.payload;
       const a = parseInt(action.payload.a, 10);
       const b = parseInt(action.payload.b, 10);
       const c = parseInt(action.payload.c, 10);

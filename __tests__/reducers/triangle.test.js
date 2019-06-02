@@ -37,17 +37,20 @@ describe('triangleReducer', () => {
     const action = { type: types.SET_TRIANGLE, payload: { a: 10,  b: 10, c: 10, } };
     const response = triangleReducer(undefined, action);
     expect(response.type).toBe('equilateral');
+    expect(response.invalid).toBeFalsy();
   });
 
   test('isosceles if two sides are equal', () => {
     const action = { type: types.SET_TRIANGLE, payload: { a: 10,  b: 10, c: 11, } };
     const response = triangleReducer(undefined, action);
     expect(response.type).toBe('isosceles');
+    expect(response.invalid).toBeFalsy();
   });
 
   test('scalene if no sides are equal', () => {
     const action = { type: types.SET_TRIANGLE, payload: { a: 10,  b: 11, c: 12, } };
     const response = triangleReducer(undefined, action);
     expect(response.type).toBe('scalene');
+    expect(response.invalid).toBeFalsy();
   });
 })

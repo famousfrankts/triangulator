@@ -14,9 +14,6 @@ exports[`<Triangulator /> Rendering it renders the component 1`] = `
   }
 >
   <Triangulator
-    setA={[Function]}
-    setB={[Function]}
-    setC={[Function]}
     setTriangle={[Function]}
     store={
       Object {

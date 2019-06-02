@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Triangulator /> Rendering it renders the component 1`] = `
+<Connect(Triangulator)
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Triangulator
+    setA={[Function]}
+    setB={[Function]}
+    setC={[Function]}
+    setTriangle={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+    triangle={
+      Object {
+        "a": 10,
+        "b": 10,
+        "c": 10,
+      }
+    }
+  >
+    <div
+      className="triangulator"
+    >
+      <section
+        className="description"
+      >
+        <h1>
+          Triangulator
+        </h1>
+        <p>
+          Welcome to the triangulator! The Triangulator is capable of many things. Predicting the future. Changing the spin of the earth. Calculating the meaning of life. But most importantly, figuring out what type of triangle you get by declaring its 3 sides lengths:
+        </p>
+      </section>
+      <form
+        data-ts="Form"
+      >
+        <fieldset>
+          <label
+            className=""
+          >
+            <span>
+              Side A
+            </span>
+            <input
+              min="1"
+              onChange={[Function]}
+              type="number"
+              value={10}
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label
+            className=""
+          >
+            <span>
+              Side B
+            </span>
+            <input
+              min="1"
+              onChange={[Function]}
+              type="number"
+              value={10}
+            />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label
+            className=""
+          >
+            <span>
+              Side C
+            </span>
+            <input
+              min="1"
+              onChange={[Function]}
+              type="number"
+              value={10}
+            />
+          </label>
+        </fieldset>
+      </form>
+      <div
+        data-ts="Note"
+      >
+        <i
+          className="ts-icon-info"
+        />
+        <p>
+          After careful consideration, we have determined that the triangle is 
+          !
+        </p>
+      </div>
+    </div>
+  </Triangulator>
+</Connect(Triangulator)>
+`;
